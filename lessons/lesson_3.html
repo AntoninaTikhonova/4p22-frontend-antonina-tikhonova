@@ -2,13 +2,48 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devise-width, initial-scale=1">
-    <meta name="og:title" content="Lesson 3">
-    <meta name="og:describtion" content="Описание">
-    <meta name="og:image" content="https://248006.selcdn.ru/main/iblock/cef/cef9aed0a0f6b5c00eed298d8d9ea20e/560cef7fd08292f2916cce5fee91c0f1.png">
+    <meta property="og:title" content="Lesson 3">
+    <meta property="viewport" content="width=devise-width, initial-scale=1">
+    <meta property="og:url" content="https://antoninatikhonova.github.io/4p22-frontend-antonina-tikhonova/lessons/lesson_3">
+    <meta property="og:describtion" content="Описание">
+    <meta property="og:image" content="https://248006.selcdn.ru/main/iblock/cef/cef9aed0a0f6b5c00eed298d8d9ea20e/560cef7fd08292f2916cce5fee91c0f1.png">
     <title>lesson_3</title>
 </head>
 <body>
-    
+    <header>
+        <div>не специфичный тег, блочный</div>
+        <span>не специфичные теги, строчный тег</span>
+    </header>
+    <main>
+        <h1>Главный заголовок страницы</h1>
+        <section>
+            <h2>Заголовок секции</h2>
+            <img src="" alt="">
+        </section>
+        <!-- <section>размещаем блок, который не может быть размещен в отдельный сайт
+            если смысл потеряется на др сайте без контекста первого сайта, то это точно секшн
+        </section> -->
+        <section>
+            <h2>Загоовок секции</h2>
+            <div>
+                <div>
+                    <h3>Заголовок блока внутри секции</h3>
+                </div>
+            </div>
+        </section>
+        <article></article>
+        <!-- <article>можно перенести на отдельный сайт и это самостоятельная информация.
+            ЕЕ можно перенести безболезненно без контекта на др сайт</article> -->
+    </main>
+    <aside></aside>
+    <footer>
+        в footer хранятся чаще ссылки<br>
+        внутренние - оставляют пользователя на изначальной странице<br>
+        внешние - открывают сторонний сайт
+        <a href="../homework_1/contacts.html">Contacts</a>
+        <a href="https://google.com" target="_blank" rel="nofollow noopener noreferrer">Google</a>
+        <!-- атрибут и его значение для запрета внешнему сайту влиять на ранее открытую вкладку
+            для безопасности  rel="nofollow noopener noreferrer" -->
+    </footer>
 </body>
 </html>
