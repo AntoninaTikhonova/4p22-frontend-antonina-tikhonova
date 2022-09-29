@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital@1&family=Rubik+Dirt&display=swap');
+
+body {
+    background: #26272b;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0px;
+    font-style: normal;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 68px;
+}
+
+a.header {
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 0px;
+    color: #DFDDDD;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+img.header {
+    margin-right: 100px;
+}
+
+div.row {
+    margin-top: 134px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+span.welcome {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15px;
+    color: #FD7E41;
+    
+}
+
+h1.welcome {
+    width: 632px;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 104px;
+    color: #FFFFFE;
+    margin: 30px 0px;
+}
+
+div.welcome-text {
+    width: 566px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #A7A9BE;
+}
+
+button.welcome {
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 50px;
+    width: 225px;
+    height: 73px;
+    background: #3C3F4A;
+    box-shadow: 0px 15px 50px rgba(171, 172, 175, 0.1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FCC232;
+}
+
+div.img-welcome {
+    background-color: #FCC232;
+    border-radius: 50%;
+    width: 567px;
+    height: 567px; 
+    margin-left: 100px;
+}
+
+img.welcome {
+    text-align: center;
+    margin-right: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.first-priority {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle-priority {
+    border-radius: 50%;
+}
+
+div.text {
+    margin-left: 200px;
+    width: 692px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 68px;
+    color: #FFFFFE;
+    margin-bottom: 0px;
+}
+
+h2.text {
+    width: 580px;
+    text-align: left;
+}
+
+p.text {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #A7A9BE;
+}
+
+button.learn-about-us {
+    margin-top: 50px;
+    width: 244px;
+    height: 73px;
+    background: #FCC232;
+    box-shadow: 0px 15px 50px rgba(215, 153, 0, 0.15);
+    border-radius: 50px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #25272E
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-dishes, .first-priority {
+    margin-top: 100px;
+}
+
+div.a {
+    margin-top: 60px;
+    text-align: center;
+}
+
+a.menu {
+    text-decoration: none;
+    margin-right: 60px;
+    color: #A7A9BE;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+a.menu:hover {
+    color: #FCC232;
+    text-decoration: 1px solid #FCC232;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+.footer.main {
+    width: 435px;
+}
+
+.footer {
+    margin-right: 200px;
+}
+
+button.circle {
+    margin-right: 20px;
+    border: 0px;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    background-color: #3C3F4A;
+}
+
+button.circle:hover {
+    background-color: #FCC232;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 15px;
+    color: #FFFFFE;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #A7A9BE;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: 194px;
+    height: 33px;
+    background: #3C3F4A;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: #888888;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    text-align: center;
+}
+
+div.dish {
+    margin-right: 40px;
+    background-color: #3C3F4A;
+    border-radius: 30px;
+    height: 550px;
+    width: 470px;
+    text-align: center;
+}
+
+.img {
+    margin-top: 30px;
+}
+
+div.dish-name {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 220px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    color: #FFFFFE;
+}
+
+div.time-cooked {
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #A7A9BE;
+}
