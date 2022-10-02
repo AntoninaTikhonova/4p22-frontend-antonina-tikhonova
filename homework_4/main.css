@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(247, 241, 241);
+    margin-left: 20%;
+    margin-right: 20% ;
+}
+h1 {
+    margin-top: 10%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+}
+p {
+    margin-top: 5%;
+    font-size: 14px;
+    font-weight:400;
+    text-align: left;
+}
+footer{
+    margin-top: 10%;
+}
+
+.header-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.header-img {
+    width: 100px;
+    border-radius: 20px  45px;
+}
+a.header {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(45, 42, 42);
+    text-decoration: none;
+    padding-top: 20px;
+}
+a.header:hover{
+    color: rgb(75, 72, 72);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline 3px solid;
+}
+.menu-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    /* column-gap: 15px; */
+    justify-content: space-between;
+}
+.product {
+    width: 200px;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+.img-product {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 13%;
+    border-radius: 20px;
+}
+.product-description {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    height: 60px;
+
+}
+.pre-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(96, 105, 113);
+    text-decoration: line-through;
+    text-align: right;
+    margin-top: 20px;
+}
+.new-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+.bye-btn {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+    background-color: rgb(191, 185, 185);
+    margin-top: 15px;
+}
+.bye-btn:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    width: 140px;
+    height: 45px;
+    
+}
+
+.footer {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+div.social {
+    justify-content: space-around;
+    /* width: 150px; */
+}
+div.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    padding-right: 50px;
+}
+button.social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(174, 167, 167);
+}
+button.social:hover {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(131, 131, 131);
+}
+input {
+    padding: 7px;
+    font-size: 14px;
+    width: 400px;
+    background-color: rgba(174, 167, 167, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+a.contacts {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    padding: 7px;
+}

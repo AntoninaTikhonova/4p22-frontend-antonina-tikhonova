@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: rgb(222, 189, 189);
+    font-family: 'Roboto', sans-serif;;
+}
+
+.card {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 4px #000;
+   
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.card-part {
+    width: 50%;
+    position: relative;
+}
+.card-part__image {
+    display: flex;
+    align-items: flex-end;
+}
+.yellow-circle {
+    background-color: yellow;
+    width: 500px;
+    height: 500px; 
+    position: absolute;
+    border-radius: 50%;
+    top: -200px;
+    right: -200px;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.discription {
+    font-weight: 300;
+    margin-bottom: 30 px;
+}
+.discription-link {
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.wrape-cost {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.cost {
+    font-size: 50px;
+    font-weight: 900;
+}
+.cost__past {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 30px;
+    font-weight: 900;
+}
+button {
+    background: red;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(138,0,0,1) 100%);
+    border: none;
+    color: white;
+    font-weight: 16px;
+    height: 50px;
+    width: 200px;
+}
+
+img {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.image-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-description-item {
+    display: flex;
+    flex-direction: column;
+}
+.image-description-item-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.image-description-item-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
