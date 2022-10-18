@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color-text: #787878;
+    --color-border-input-entrance: #787878;
+    --color-input-value: #CCCCCC;
+    --color-buttom-entrance-background: #1A226B;
+    --color-buttom-trxt: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    background-color: #1B2473;
+}
+
+.form-for-entrance {
+    position: absolute;
+    margin-top: calc(82 / 1440 * 100vw);
+    margin-left: calc((1440 / 2 - 600/2) / 1440 * 100vw);
+    background-color: #FFFFFF;
+    width: calc(600 / 1440 * 100vw);
+    height: calc(412 / 1440 * 100vw);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 10px rgba($color: #000000, $alpha: 0.25);
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+
+    &__entrance-header {
+        font-size: calc(50 / 1440 * 100vw);
+        color: var(--color-text);
+        margin-top: calc(26 / 1440 * 100vw);
+    }
+
+    &__label-for-registration {
+        font-size: 16px;
+        text-align: left;
+        padding-left: calc(8 /1440 *100vw);
+        color: var(--color-text);
+    }
+
+    &__input-for-registration {
+        width: 509px;
+        height: 49px;
+        border: 2px solid --color-border-input-entrance;
+        border-radius: 10px;
+        font-size: 28px;
+        color: var(--color-text)
+        // margin-bottom: calc(32 / 1440 * 100vw);
+    }
+    &__input-for-registration::before {
+        color: var(--color-input-value);
+    }
+    &__checkbox-agreement-for-distribution {
+        display: flex;
+        flex-direction: row;
+        row-gap: 8px;
+        position: relative;
+
+        & > div {
+            width: calc(24 / 1440 * 100vw);
+            height: calc(24 / 1440 * 100vw);
+            border: 2px solid --color-border-input-entrance;
+        }
+        & >input {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+        }
+        
+    }
+
+    &__button-submit {
+        width: 180px;
+        height: 52px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-buttom-entrance-background);
+        color: var(--color-buttom-trxt);
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+
+}

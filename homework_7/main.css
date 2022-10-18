@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-text: #787878;
+  --color-border-input-entrance: #787878;
+  --color-input-value: #CCCCCC;
+  --color-buttom-entrance-background: #1A226B;
+  --color-buttom-trxt: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  background-color: #1B2473;
+}
+
+.form-for-entrance {
+  position: absolute;
+  margin-top: 5.6944444444vw;
+  margin-left: 29.1666666667vw;
+  background-color: #FFFFFF;
+  width: 41.6666666667vw;
+  height: 28.6111111111vw;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-body__entrance-header {
+  font-size: 3.4722222222vw;
+  color: var(--color-text);
+  margin-top: 1.8055555556vw;
+}
+.form-body__label-for-registration {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 0.5555555556vw;
+  color: var(--color-text);
+}
+.form-body__input-for-registration {
+  width: 509px;
+  height: 49px;
+  border: 2px solid --color-border-input-entrance;
+  border-radius: 10px;
+  font-size: 28px;
+  color: var(--color-text);
+}
+.form-body__input-for-registration::before {
+  color: var(--color-input-value);
+}
+.form-body__checkbox-agreement-for-distribution {
+  display: flex;
+  flex-direction: row;
+  row-gap: 8px;
+  position: relative;
+}
+.form-body__checkbox-agreement-for-distribution > div {
+  width: 1.6666666667vw;
+  height: 1.6666666667vw;
+  border: 2px solid --color-border-input-entrance;
+}
+.form-body__checkbox-agreement-for-distribution > input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.form-body__button-submit {
+  width: 180px;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-buttom-entrance-background);
+  color: var(--color-buttom-trxt);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
