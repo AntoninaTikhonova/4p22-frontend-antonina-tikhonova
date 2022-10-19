@@ -6,86 +6,110 @@
 }
 
 :root {
+    --color-background-main: #1B2473;
+    --color-background-form: #FFFFFF;
     --color-text: #787878;
     --color-border-input-entrance: #787878;
-    --color-input-value: #CCCCCC;
+    --color-input-label: #CCCCCC;
     --color-buttom-entrance-background: #1A226B;
-    --color-buttom-trxt: #FFFFFF;
+    --color-buttom-text: #FFFFFF;
 }
 
 body {
     margin: 0;
-    background-color: #1B2473;
+    background-color: var(--color-background-main);
 }
 
 .form-for-entrance {
-    position: absolute;
-    margin-top: calc(82 / 1440 * 100vw);
-    margin-left: calc((1440 / 2 - 600/2) / 1440 * 100vw);
-    background-color: #FFFFFF;
-    width: calc(600 / 1440 * 100vw);
-    height: calc(412 / 1440 * 100vw);
+    // position: relative;
+    margin-top: 82px;
+    margin-left: 412px;
+    background-color: var(--color-background-form);
+    width: 600px;
+    height: 412px;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 40px 10px rgba($color: #000000, $alpha: 0.25);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-body {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    text-align: center;    
-
-    &__entrance-header {
-        font-size: calc(50 / 1440 * 100vw);
-        color: var(--color-text);
-        margin-top: calc(26 / 1440 * 100vw);
-    }
-
-    &__label-for-registration {
-        font-size: 16px;
-        text-align: left;
-        padding-left: calc(8 /1440 *100vw);
+    flex-flow: column;
+    
+    &__entrance-header { 
+        text-align: center;
+        margin-top: 26px;
+        margin-bottom: 0;
+        font-size: 50px;
+        font-weight: bold;
         color: var(--color-text);
     }
 
-    &__input-for-registration {
+    &__label-for-registration {       
+        font-size: 28px;
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        transition-duration: 0.4s;
+    }
+
+    &__input-for-registration div {
+        position: relative;
+        color: var(--color-input-label)
+    }
+
+    &__input-for-registration input{  
+        outline: none;
         width: 509px;
         height: 49px;
-        border: 2px solid --color-border-input-entrance;
+        border: 2px solid var(--color-border-input-entrance);
         border-radius: 10px;
         font-size: 28px;
-        color: var(--color-text)
-        // margin-bottom: calc(32 / 1440 * 100vw);
+        font-weight: 700;
     }
-    &__input-for-registration::before {
-        color: var(--color-input-value);
-    }
-    &__checkbox-agreement-for-distribution {
-        display: flex;
-        flex-direction: row;
-        row-gap: 8px;
-        position: relative;
 
-        & > div {
-            width: calc(24 / 1440 * 100vw);
-            height: calc(24 / 1440 * 100vw);
-            border: 2px solid --color-border-input-entrance;
-        }
-        & >input {
-            opacity: 0;
-            position: absolute;
-            width: 100%;
-        }
-        
+    &__label-checkbox-agreement-for-distribution {
+        padding-left: 79px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-text);
+    }
+
+    &__label-checkbox-agreement-for-distribution::before {
+        content: '';
+        position: absolute;
+        left: 45px;
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--color-border-input-entrance);
+        border-radius: 7px;
+    }
+    
+    &__checkbox-agreement-for-distribution {
+        position: relative;
+    }
+
+    &__checkbox-agreement-for-distribution input {        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    &__checkbox-agreement-for-distribution input:checked + input::before {
+        background: var(--color-border-input-entrance);
     }
 
     &__button-submit {
+        text-align: center;
         width: 180px;
         height: 52px;
         border: none;
         border-radius: 10px;
         background-color: var(--color-buttom-entrance-background);
-        color: var(--color-buttom-trxt);
+        color: var(--color-buttom-text);
         text-align: center;
         font-size: 24px;
         font-weight: bold;

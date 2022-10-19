@@ -5,81 +5,273 @@
 }
 
 :root {
+  --color-background-main: #1B2473;
+  --color-background-form: #FFFFFF;
   --color-text: #787878;
   --color-border-input-entrance: #787878;
-  --color-input-value: #CCCCCC;
+  --color-input-label: #CCCCCC;
   --color-buttom-entrance-background: #1A226B;
-  --color-buttom-trxt: #FFFFFF;
+  --color-buttom-text: #FFFFFF;
 }
 
 body {
   margin: 0;
-  background-color: #1B2473;
+  background-color: var(--color-background-main);
 }
 
 .form-for-entrance {
-  position: absolute;
-  margin-top: 5.6944444444vw;
-  margin-left: 29.1666666667vw;
-  background-color: #FFFFFF;
-  width: 41.6666666667vw;
-  height: 28.6111111111vw;
+  margin-top: 50px;
+  margin-left: 420px;
+  background-color: var(--color-background-form);
+  width: calc(600 / 1440 * 100vw);
+  height: calc(412 / 1440 * 100vw);
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: calc(20 / 1440 * 100vw);
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-body {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-flow: column;
 }
 .form-body__entrance-header {
-  font-size: 3.4722222222vw;
-  color: var(--color-text);
-  margin-top: 1.8055555556vw;
-}
-.form-body__label-for-registration {
-  font-size: 16px;
-  text-align: left;
-  padding-left: 0.5555555556vw;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: calc(4 / 1440 * 100vw);
+  font-size: calc(50 /1440 * 100vw);
+  font-weight: bold;
   color: var(--color-text);
 }
+
+.form-body__div-for-registration {
+  position: relative;
+  margin-top: calc(32 / 1440 * 100vw);
+  margin-left: calc(45 / 1440 *100vw);
+  }
 .form-body__input-for-registration {
-  width: 509px;
-  height: 49px;
-  border: 2px solid --color-border-input-entrance;
+  outline: none;
+  width: calc(509 / 1440 *100vw);
+  height: calc(49 / 1440 *100vw);
+  border: 2px solid var(--color-border-input-entrance);
   border-radius: 10px;
-  font-size: 28px;
+ 
+  font-size: calc(28 / 1440 *100vw);
+  font-weight: 700;
   color: var(--color-text);
+  padding: calc(15 / 1440 *100vw);
 }
-.form-body__input-for-registration::before {
-  color: var(--color-input-value);
+.form-body__input-for-registration::placeholder {
+  color: var(--color-input-label);
+}
+
+.form-body__label-for-registration {
+  position: absolute;
+  top: calc(-22 / 1440 *100vw);
+  left: calc(8 / 1440 *100vw);
+
+  font-size: calc(16 / 1440 *100vw);
+  font-weight: 700;
+  color: var(--color-text);
+
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
 }
 .form-body__checkbox-agreement-for-distribution {
-  display: flex;
-  flex-direction: row;
-  row-gap: 8px;
-  position: relative;
+  margin-left: calc(45 / 1440 *100vw);
+  margin-top: calc(16 / 1440 *100vw);
 }
-.form-body__checkbox-agreement-for-distribution > div {
-  width: 1.6666666667vw;
-  height: 1.6666666667vw;
-  border: 2px solid --color-border-input-entrance;
-}
-.form-body__checkbox-agreement-for-distribution > input {
-  opacity: 0;
+.form-body__input-checkbox-agreement-for-distribution {
   position: absolute;
-  width: 100%;
+  z-index: -1;
+  opacity: 0;
 }
+.form-body__label-checkbox-agreement-for-distribution {
+  display: inline-flex;
+  align-items: center;
+  font-size: calc(14 / 1440 *100vw);
+  color: var(--color-text);
+}
+.form-body__label-checkbox-agreement-for-distribution::before {
+  content: '';
+  display: inline-block;
+  width: calc(24 / 1440 *100vw);
+  height: calc(24 / 1440 *100vw);
+  box-sizing: border-box;
+  border: 2px solid var(--color-border-input-entrance);
+  border-radius: 7px;
+  margin-right: calc(10 / 1440 *100vw);
+}
+.form-body__label-checkbox-agreement-for-distribution::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: calc(24 / 1440 *100vw);
+  height: calc(24 / 1440 *100vw);
+  box-sizing: border-box;
+  border: 2px solid var(--color-border-input-entrance);
+  border-radius: 7px;
+  margin-right: calc(10 / 1440 *100vw);
+  background-image: url(img/check.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: calc(30 / 1440 *100vw) calc(30 / 1440 *100vw);
+  opacity: 0;
+  transition: 0.2 opacity;
+}
+
+.form-body__input-checkbox-agreement-for-distribution:checked + .form-body__label-checkbox-agreement-for-distribution::after {
+  opacity: 1;
+}
+
 .form-body__button-submit {
-  width: 180px;
-  height: 52px;
+  position: absolute;
+  margin-left: calc(210 / 1440 *100vw);
+  margin-top: calc(334 / 1440 *100vw);
+  text-align: center;
+  width: calc(180 / 1440 *100vw);
+  height: calc(52 / 1440 *100vw);
   border: none;
   border-radius: 10px;
   background-color: var(--color-buttom-entrance-background);
-  color: var(--color-buttom-trxt);
-  text-align: center;
-  font-size: 24px;
+  color: var(--color-buttom-text);
+  font-size: calc(24 / 1440 *100vw);
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media screen and (max-width: 768px) {
+  .form-for-entrance {
+    margin: 20px;
+    
+    background-color: var(--color-background-form);
+    width: calc(728 / 768 * 100vw);
+    height: calc(100vh - 40px);
+    border: none;
+    border-radius: calc(20 / 768 * 100vw);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .form-body {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+  }
+  .form-body__entrance-header {
+    text-align: center;
+    margin-top: calc(38 / 768 * 100vw);
+   
+    font-size: calc(60 /768 * 100vw);
+    font-weight: bold;
+    color: var(--color-text);
+  }
+  
+  .form-body__div-for-registration {
+    position: relative;
+    margin-top: calc(37 / 768 * 100vw);
+    margin-left: calc(45 / 768 *100vw);
+    }
+  .form-body__input-for-registration {
+    outline: none;
+    width: calc(638 / 768 *100vw);
+    height: calc(49 / 768 *100vw);
+    border: 2px solid var(--color-border-input-entrance);
+    border-radius: calc(10 / 768 * 100vw);
+   
+    font-size: calc(28 / 768 *100vw);
+    font-weight: 700;
+    color: var(--color-text);
+    padding: calc(15 / 768 *100vw);
+  }
+  .form-body__input-for-registration::placeholder {
+    color: var(--color-input-label);
+  }
+  
+  .form-body__label-for-registration {
+    position: absolute;
+    top: calc(-32 / 768 *100vw);
+    left: calc(8 / 768 *100vw);
+  
+    font-size: calc(24 / 768 *100vw);
+    font-weight: 700;
+    color: var(--color-text);
+  
+  }
+   .form-body__checkbox-agreement-for-distribution {
+    margin-left: calc(45 / 768 *100vw);
+    margin-top: calc(19 / 768 *100vw);
+  }
+  .form-body__input-checkbox-agreement-for-distribution {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .form-body__label-checkbox-agreement-for-distribution {
+    display: inline-flex;
+    align-items: center;
+    font-size: calc(18 / 768 *100vw);
+    color: var(--color-text);
+  }
+  .form-body__label-checkbox-agreement-for-distribution::before {
+    content: '';
+    display: inline-block;
+    width: calc(32 / 768 *100vw);
+    height: calc(32 / 768 *100vw);
+    box-sizing: border-box;
+    border: 2px solid var(--color-border-input-entrance);
+    border-radius: 7px;
+    margin-right: calc(10 / 768 *100vw);
+  }
+  .form-body__label-checkbox-agreement-for-distribution::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: calc(32 / 768 *100vw);
+    height: calc(32 / 768 *100vw);
+    box-sizing: border-box;
+    border: 2px solid var(--color-border-input-entrance);
+    border-radius: 7px;
+    margin-right: calc(10 / 768 *100vw);
+    background-image: url(img/check.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: calc(40 / 768 *100vw) calc(40 / 768 *100vw);
+    opacity: 0;
+    transition: 0.2 opacity;
+  }
+  
+  .form-body__input-checkbox-agreement-for-distribution:checked + .form-body__label-checkbox-agreement-for-distribution::after {
+    opacity: 1;
+  }
+  
+  .form-body__button-submit {
+    position: absolute;
+    margin-left: calc(254 / 768 * 100vw);
+    margin-top: calc(375 / 768 * 100vw);
+    text-align: center;
+    width: calc(220 / 768 * 100vw);
+    height: calc(80 / 768 * 100vw);
+    border: none;
+    border-radius: calc(10 / 768 * 100 vw);
+    background-color: var(--color-buttom-entrance-background);
+    color: var(--color-buttom-text);
+    font-size: calc(32 / 768 * 100vw);
+    font-weight: bold;
+  }
+
+}
+
+/*# sourceMappingURL=main.css.map */
