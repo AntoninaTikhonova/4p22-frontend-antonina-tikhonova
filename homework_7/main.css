@@ -20,8 +20,8 @@ body {
 }
 
 .form-for-entrance {
-  margin-top: 50px;
-  margin-left: 420px;
+  margin-top: calc(82 / 1440 * 100vw);
+  margin-left: calc(412 / 1440 * 100vw);
   background-color: var(--color-background-form);
   width: calc(600 / 1440 * 100vw);
   height: calc(412 / 1440 * 100vw);
@@ -37,8 +37,8 @@ body {
 }
 .form-body__entrance-header {
   text-align: center;
-  margin-top: 26px;
-  margin-bottom: calc(4 / 1440 * 100vw);
+  margin-top: calc(23 / 1440 * 100vw);
+  margin-bottom: calc(1 / 1440 * 100vw);
   font-size: calc(50 /1440 * 100vw);
   font-weight: bold;
   color: var(--color-text);
@@ -46,7 +46,7 @@ body {
 
 .form-body__div-for-registration {
   position: relative;
-  margin-top: calc(32 / 1440 * 100vw);
+  margin-top: calc(30 / 1440 * 100vw);
   margin-left: calc(45 / 1440 *100vw);
   }
 .form-body__input-for-registration {
@@ -67,7 +67,7 @@ body {
 
 .form-body__label-for-registration {
   position: absolute;
-  top: calc(-22 / 1440 *100vw);
+  top: calc(-24 / 1440 *100vw);
   left: calc(8 / 1440 *100vw);
 
   font-size: calc(16 / 1440 *100vw);
@@ -172,8 +172,8 @@ body {
   }
   .form-body__entrance-header {
     text-align: center;
-    margin-top: calc(38 / 768 * 100vw);
-   
+    margin-top: calc(27 / 768 * 100vw);
+    margin-left: calc(-13 / 768 * 100vw);
     font-size: calc(60 /768 * 100vw);
     font-weight: bold;
     color: var(--color-text);
@@ -181,20 +181,20 @@ body {
   
   .form-body__div-for-registration {
     position: relative;
-    margin-top: calc(37 / 768 * 100vw);
-    margin-left: calc(45 / 768 *100vw);
+    margin-top: calc(30 / 768 * 100vw);
+    margin-left: calc(45 / 768 * 100vw);
     }
   .form-body__input-for-registration {
     outline: none;
-    width: calc(638 / 768 *100vw);
-    height: calc(49 / 768 *100vw);
+    width: calc(638 / 768 * 100vw);
+    height: calc(49 / 768 * 100vw);
     border: 2px solid var(--color-border-input-entrance);
     border-radius: calc(10 / 768 * 100vw);
    
-    font-size: calc(28 / 768 *100vw);
+    font-size: calc(28 / 768 * 100vw);
     font-weight: 700;
     color: var(--color-text);
-    padding: calc(15 / 768 *100vw);
+    padding: calc(15 / 768 * 100vw);
   }
   .form-body__input-for-registration::placeholder {
     color: var(--color-input-label);
@@ -202,17 +202,17 @@ body {
   
   .form-body__label-for-registration {
     position: absolute;
-    top: calc(-32 / 768 *100vw);
-    left: calc(8 / 768 *100vw);
+    top: calc(-32 / 768 * 100vw);
+    left: calc(8 / 768 * 100vw);
   
-    font-size: calc(24 / 768 *100vw);
+    font-size: calc(24 / 768 * 100vw);
     font-weight: 700;
     color: var(--color-text);
   
   }
    .form-body__checkbox-agreement-for-distribution {
-    margin-left: calc(45 / 768 *100vw);
-    margin-top: calc(19 / 768 *100vw);
+    margin-left: calc(45 / 768 * 100vw);
+    margin-top: calc(19 / 768 * 100vw);
   }
   .form-body__input-checkbox-agreement-for-distribution {
     position: absolute;
@@ -222,33 +222,33 @@ body {
   .form-body__label-checkbox-agreement-for-distribution {
     display: inline-flex;
     align-items: center;
-    font-size: calc(18 / 768 *100vw);
+    font-size: calc(18 / 768 * 100vw);
     color: var(--color-text);
   }
   .form-body__label-checkbox-agreement-for-distribution::before {
     content: '';
     display: inline-block;
-    width: calc(32 / 768 *100vw);
-    height: calc(32 / 768 *100vw);
+    width: calc(32 / 768 * 100vw);
+    height: calc(32 / 768 * 100vw);
     box-sizing: border-box;
     border: 2px solid var(--color-border-input-entrance);
     border-radius: 7px;
-    margin-right: calc(10 / 768 *100vw);
+    margin-right: calc(10 / 768 * 100vw);
   }
   .form-body__label-checkbox-agreement-for-distribution::after {
     content: '';
     position: absolute;
     display: inline-block;
-    width: calc(32 / 768 *100vw);
-    height: calc(32 / 768 *100vw);
+    width: calc(32 / 768 * 100vw);
+    height: calc(32 / 768 * 100vw);
     box-sizing: border-box;
     border: 2px solid var(--color-border-input-entrance);
     border-radius: 7px;
-    margin-right: calc(10 / 768 *100vw);
+    margin-right: calc(10 / 768 * 100vw);
     background-image: url(img/check.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: calc(40 / 768 *100vw) calc(40 / 768 *100vw);
+    background-size: calc(40 / 768 * 100vw) calc(40 / 768 * 100vw);
     opacity: 0;
     transition: 0.2 opacity;
   }
