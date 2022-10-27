@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-    --media-size: calc(100vw / 1440);
+    --media-size: calc(100vw / 768);
     --main-background-color: #FFF0F5;
     --background-button-color: #FFF0F5;
     --calculator-color: #2F4F4F;
@@ -17,7 +17,6 @@
 
 body {
     margin: 0;
-    height: 100%;
     background-color: var(--main-background-color);
     font-family: 'Roboto Mono', monospace;
 }
@@ -29,7 +28,7 @@ input {
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: calc(20 * var(--media-size));
     font-weight: 700;
     color: var(--font-color-input);
 }
@@ -41,9 +40,7 @@ input::placeholder {
 }
 
 .calculator {
-    width: 30%;
-    height: 30%;
-    margin: 5% auto;
+    width: 50%;
     background-color: var(--calculator-color);
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -52,33 +49,24 @@ input::placeholder {
 .calculator-form {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    /* column-gap: 100px; */
+    row-gap: calc(30 * var(--media-size));
     justify-content: space-evenly;
     margin: auto;
-    padding: 20% 10%;
+    padding: 10% 0%;
 }
 
 .calculator-form__header {
-    font-size: 36px;
+    font-size: calc(36 * var(--media-size));
     font-weight: 700;
+    line-height: calc(40 * var(--media-size));
     color: var(--font-color-header);
 }
 
-.calculator-form__first-operand-input {}
-
-.calculator-form__operator-input {}
-
-.calculator-form__second-operand-input {}
-
 .calculator-form__result-calculation {
-    height: 100px;
+    height: calc(60 * var(--media-size));
     width: 100%;
-    margin-top: 15%;
-    padding: 15px;
-    vertical-align: middle;
     text-align: center;
-    font-size: 24px;
+    font-size: calc(24 * var(--media-size));
     font-weight: 700;
     color: var(--font-color-header);
 }
@@ -90,16 +78,16 @@ input::placeholder {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
+    font-size: calc(24 * var(--media-size));
     font-weight: 700;
     color: var(--font-color-button);
-    line-height: 30px;
+    line-height: calc(40 * var(--media-size));
 }
 
 .footer {
     margin-top: 5%;
     padding-left: 10%;
-    font-size: 24px;
+    font-size: calc(24 * var(--media-size));
     font-weight: 400;
     color: var(--calculator-color);
 }
