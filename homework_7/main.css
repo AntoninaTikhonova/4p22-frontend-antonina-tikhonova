@@ -92,21 +92,25 @@ body {
 :focus:-ms-input-placeholder {
   color: transparent;
 }
+
 .form-body__checkbox-agreement-for-distribution {
   margin-left: calc(-200 * var(--change-media-size));
   margin-top: calc(16 * var(--change-media-size));
 }
+
 .form-body__input-checkbox-agreement-for-distribution {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
+
 .form-body__label-checkbox-agreement-for-distribution {
   display: inline-flex;
   align-items: center;
   font-size: calc(14 * var(--change-media-size));
   color: var(--color-text);
 }
+
 .form-body__label-checkbox-agreement-for-distribution::before {
   content: '';
   display: inline-block;
@@ -116,6 +120,7 @@ body {
   border-radius: 7px;
   margin-right: calc(10 * var(--change-media-size));
 }
+
 .form-body__label-checkbox-agreement-for-distribution::after {
   content: '';
   position: absolute;
@@ -162,15 +167,54 @@ body {
     height: calc(100vh - 40px);
   }
 
+  .form-body {
+    padding: calc(35 * var(--change-media-size)) calc(45 * var(--change-media-size));
+  }
+
   .form-body__entrance-header {
+    margin: 0 0 calc(5 * var(--change-media-size)) calc(-15 * var(--change-media-size)); 
     font-size: calc(60 * var(--change-media-size));
-    font-weight: bold;
     line-height: calc(50 * var(--change-media-size));
   }
 
   .form-body__div-for-registration {
     width: calc(638 * var(--change-media-size));
-    margin: calc(35 * var(--change-media-size)) calc(45 * var(--change-media-size));
+    margin-top: calc(35 * var(--change-media-size));
+  }
+
+  .form-body__input-for-registration {
+    width: calc(638 * var(--change-media-size));
+  }
+
+  .form-body__label-for-registration {
+    margin-top: calc(-7 * var(--change-media-size));
+    font-size: calc(24 * var(--change-media-size));
+  }
+  
+  .form-body__checkbox-agreement-for-distribution {
+    margin-left: calc(-238 * var(--change-media-size));
+    margin-top: calc(20 * var(--change-media-size));
+  }
+  
+  .form-body__label-checkbox-agreement-for-distribution {
+    font-size: calc(18 * var(--change-media-size));
+  }
+  
+  .form-body__label-checkbox-agreement-for-distribution::before {
+    width: calc(32 * var(--change-media-size));
+    height: calc(32 * var(--change-media-size));
+  }
+  
+  .form-body__label-checkbox-agreement-for-distribution::after {
+    width: calc(32 * var(--change-media-size));
+    height: calc(32 * var(--change-media-size));
+  }
+  
+  .form-body__button-submit {
+    margin-top: calc(340 * var(--change-media-size));
+    width: calc(220 * var(--change-media-size));
+    height: calc(80 * var(--change-media-size));
+    font-size: calc(32 * var(--change-media-size));
   }
 
   
