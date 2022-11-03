@@ -9,17 +9,17 @@ resultButton.addEventListener('click', (event) => {
     const secondValue = document.getElementById('second-value').value;
     const operator = document.getElementById('operator').value;
 
-    if (firstValue === '') {
+    if (firstValue.trim() === '') {
         result = 'Первое число не указано';
         } 
-        else if ( firstValue === 'string' && isNaN(firstValue)){
+        else if (isNaN(firstValue)){
             result = 'Первое число указано не верно'
         }
-        else if (secondValue === '') {
+        else if (secondValue.trim() === '') {
             result = 'Второе число не указано';
         }
-        else if (isNaN(firstValue) || isNaN(secondValue)) {
-            result = 'Число указано не верно';
+        else if (isNaN(secondValue)) {
+            result = 'Второе число указано не верно';
         }
         else if (secondValue === '0' && operator === '/') {
             result = 'Операция не корректна';
