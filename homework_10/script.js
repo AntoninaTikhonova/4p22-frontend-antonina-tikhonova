@@ -10,3 +10,9 @@ const fibonacci = (function makeFibonacciFunction() {
     }
 }
 )()
+
+console.log(fibonacci())
+console.log(fibonacci())
+console.log(fibonacci())
+console.log(fibonacci())
+console.log(fibonacci())

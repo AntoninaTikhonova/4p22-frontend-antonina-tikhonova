@@ -12,6 +12,9 @@ resultButton.addEventListener('click', (event) => {
     if (firstValue === '') {
         result = 'Первое число не указано';
         } 
+        else if ( firstValue === 'string' && isNaN(firstValue)){
+            result = 'Первое число указано не верно'
+        }
         else if (secondValue === '') {
             result = 'Второе число не указано';
         }
