@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --background-color-main: #FFFFFF;
+    --header-color: #787878;
+    --link-color: #787878;
+    --link-header-avtive-color: #1A226B;
+    --form-entrance-header-color: #787878;
+    --input-border-color: #787878;
+    --input-text-color: #787878;
+    --input-placeholder-color: #CCCCCC;
+    --label-text-color: #787878;
+    --button-form-background-color: #1A226B;
+    --button-form-text-color: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px rgba(#000000 0.25);
+
+    &__logo {
+        width: 222px;
+        height: 50px;
+        padding: 18px 30px 0px 30px;
+    }
+    &__hedline {
+        display: inline;
+        padding-top: 21px;
+
+        font-family: 'Inter';
+        font-weight: bold;
+        font-size: 36px;
+        color: var(--header-color);
+    }
+    &__link-registration, &__link-entrance {
+        text-decoration: none;
+
+        color: var(--link-color);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__link-registration:active, &__link-entrance:active {
+        color: var(--link-header-active-color);
+    }
+    &__link-registration:visited, &__link-entrance:visited {
+        color: var(--link-color);
+    }
+    &__link-registration {
+        padding-right: 28px;
+
+    }
+    &__link-entrance {
+        padding-right: 43px;
+    }
+}
+
+.form-entrance {
+    width: 600px;
+    height: 383px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 40px 10px rgba(#000000 0.25) ;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__header {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--form-entrance-header-color);
+    }
+    &__email{
+        position: relative;
+        &-input {
+            margin-top: 36px;
+            width: 510px;
+            height: 49px;
+            border: 2px solid var(--input-border-color);
+
+            color: var(--input-text-color);
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 36px;
+            padding-left: 15px;
+
+            &::placeholder{
+                color: var(--input-placeholder-color);
+            }
+        }
+        &-label {
+            position: absolute;
+            top: -20px;
+            left: 8px;
+
+            color: var(--label-text-color);
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bold;
+        }
+    }
+    &__password{
+        position: relative;
+        &-input {
+            margin-top: 32px;
+            width: 510px;
+            height: 49px;
+            border: 2px solid var(--input-border-color);
+
+            color: var(--input-text-color);
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 36px;
+            padding-left: 15px;
+
+            &::placeholder{
+                color: var(--input-placeholder-color);
+            }
+        }
+        &-label {
+            position: absolute;
+            top: -20px;
+            left: 8px;
+
+            color: var(--label-text-color);
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bold;
+        }
+    }
+    
+    &__buttom-entrance {
+        width: 180px;
+        height: 52px;
+        border: none;
+        background-color: var(--button-form-background-color);
+
+        color: var(--button-form-text-color);
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 16px;
+    }
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+  
+:focus::-moz-placeholder {
+    color: transparent;
+}
+  
+:focus:-moz-placeholder {
+    color: transparent;
+}
+  
+:focus:-ms-input-placeholder {
+    color: transparent;
+} 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <title>Homework_8(attestation)</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="header__logo" src="img/1280px-IU_logo 1.png" alt="innopolis-logo">
+            <h1 class="header__hedline">PCS Frontend</h1>
+        </div>
+        <div>
+            <a class="header__link-registration" href="registration.html">Регистрация</a>
+            <a class="header__link-entrance" href="entrance-form.html">Вход</a>
+        </div>
+    </header>
+    <main>
+        <form id="form" class="form-registration">
+            <div class="form-registration__body">
+                <h2 class="form-registration__header">Регистрация</h2>
+                <div class="form-registration__email">
+                    <input class="form-registration__email-input" type="text" name="email" id="email" placeholder="Введите email">
+                    <label class="form-registration__email-label" for="email">Email</label>
+                    <div class="form-registration__validation" id="email-valid"></div>
+                </div>
+                <div class="form-registration__password">
+                    <input class="form-registration__password-input" type="password" name="password" id="password" placeholder="Введите пароль">
+                    <label class="form-registration__password-label" for="password">Пароль</label>
+                    <div class="form-registration__validation_password" id="password-valid"></div>
+                </div>
+                <div class="form-registration__password-repeat">
+                    <input class="form-registration__password-repeat-input" type="password" name="password-repeat" id="password" placeholder="Подтвердите пароль">
+                    <label class="form-registration__password-repeat-label" for="password">Подтверждение пароля</label>
+                    <div class="form-registration__validation_password" id="password-repeat-valid"></div>
+                </div>
+                <div class="form-registration__radio-gender">
+                    <h3 class="form-registration__radio-headline">Пол</h3>
+                    <div class="form-registration__radio-container">
+                        <input class="form-registration__radio-gender-input" type="radio" id="male" name="gender" value="male">
+                        <label class="form-registration__radio-gender-label" for="male">Мужчина</label>
+                    </div>
+                    <div>
+                        <input class="form-registration__radio-gender-input" type="radio"id="female" name="gender" value="female">
+                        <label class="form-registration__radio-gender-label" for="female">Женщина</label>
+                    </div>
+                </div>
+                <div class="form-registration__form-tell-about-yourself">
+                    <label class="form-registration__label-tell-about-yourself" for="">О себе</label>
+                    <textarea class="form-registration__input-tell-about-yourself" name="about-yoyrself" type="texarea" rows="6" cols="30" placeholder="Расскажите о себе..."></textarea>
+                </div>
+                <div class="form-registration__checkbox-agreement-for-updates">
+                    <input class="form-registration__input-agreement-for-updates" type="checkbox" name="agreement" id="agreement">
+                    <label class="form-registration__label-agreement-for-updates" for="agreement">Я согласен получать обновления на почту</label>
+                </div>
+                <button class="form-registration__buttom-entrance" type="submit">Регистрация</button>
+            </div>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
