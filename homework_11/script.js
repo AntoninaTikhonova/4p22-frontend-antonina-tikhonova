@@ -28,9 +28,9 @@ fetch('https://reqres.in/api/users?per_page=12')
         console.log(findInformationAboutUsers(letterFUsers));
         console.log('----------');
         console.log('Пункт №4:');
-        const ourBaseConsistOf = usersDataArray.reduce((acc, element) => {
+        const ourBaseConsistOf = usersDataArray.reduce((acc, element, index, array) => {
             let firstAndSecondName = ` ${element.first_name} ${element.last_name}`
-            if (element !== Array.length - 1) {
+            if (index !== (array.length - 1)) {
                 firstAndSecondName += ',';
             } else {
                 firstAndSecondName += '.';

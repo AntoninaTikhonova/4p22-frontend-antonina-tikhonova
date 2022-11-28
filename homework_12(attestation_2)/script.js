@@ -25,27 +25,28 @@ form.addEventListener("submit", (event) => {
 
   const email = formData.get("email");
   const password = formData.get("password");
-  const confirmation = formData.get("passvord-repeat");
+  const confirmation = formData.get("password-repeat");
   const gender = formData.get("gender");
   const aboutYourself = formData.get("about-yoyrself");
   const agreement = formData.get("agreement");
 
   let isValid = true;
 
-  if (email.trim() === "") {
-    isValid = false;
+  if (!email) {
     emailInput.style.borderColor = errorColor;
     emailInvalid.innerText = "Поле обязательно для заполнения";
-  } else if (!validateEmail(email)) {
     isValid = false;
+  } else if (!validateEmail(email)) {
     emailInput.style.borderColor = errorColor;
     emailInvalid.innerText = "Email введён некорректно";
+    isValid = false;
   } else {
     emailInput.style.borderColor = commonColor;
     emailInvalid.innerText = "";
+    isValid = true;
   }
 
-  if (password.trim() === "") {
+  if (!password) {
     passwordInput.style.borderColor = errorColor;
     passwordInvalid.innerText = "Поле обязательно для заполнения";
     isValid = false;
@@ -56,9 +57,10 @@ form.addEventListener("submit", (event) => {
   } else {
     passwordInput.style.borderColor = commonColor;
     passwordInvalid.innerText = "";
+    isValid = true;
   }
 
-  if ((confirmation || "").trim() === "") {
+  if (!confirmation) {
     passwordRepeatInput.style.borderColor = errorColor;
     passwordRepeatInvalid.innerText = "Поле обязательно для заполнения";
     isValid = false;
@@ -66,8 +68,7 @@ form.addEventListener("submit", (event) => {
     passwordRepeatInput.style.borderColor = errorColor;
     passwordRepeatInvalid.innerText = "Пароли не совпадают";
     isValid = false;
-  } 
-    else {
+  } else {
     passwordRepeatInput.style.borderColor = commonColor;
     passwordRepeatInvalid.innerText = "";
     isValid = true;
@@ -83,5 +84,6 @@ form.addEventListener("submit", (event) => {
             checkbox: agreement,
         }
         );
+        document.getElementById('form').reset();
     }
 });
