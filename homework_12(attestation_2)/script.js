@@ -58,13 +58,19 @@ form.addEventListener("submit", (event) => {
     passwordInvalid.innerText = "";
   }
 
-  if (confirmation.trim() === "" || confirmation !== password) {
+  if ((confirmation || "").trim() === "") {
+    passwordRepeatInput.style.borderColor = errorColor;
+    passwordRepeatInvalid.innerText = "Поле обязательно для заполнения";
+    isValid = false;
+  } else if (confirmation !== password) {
     passwordRepeatInput.style.borderColor = errorColor;
     passwordRepeatInvalid.innerText = "Пароли не совпадают";
     isValid = false;
-  } else {
+  } 
+    else {
     passwordRepeatInput.style.borderColor = commonColor;
     passwordRepeatInvalid.innerText = "";
+    isValid = true;
   }
 
   if (isValid === true) {
